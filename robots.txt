@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.crepelicious.com.br/sitemap.xml
+Sitemap: https://crepelicious.com.br/sitemap.xml
