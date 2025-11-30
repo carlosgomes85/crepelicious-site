@@ -14,7 +14,7 @@
 
 /* ============================
    BASE
-   ============================ */
+  ============================ */
 
 html {
   scroll-behavior: smooth;
@@ -27,7 +27,7 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
-  padding-top: 4.5rem; /* espaço para o navbar fixo */
+  padding-top: 4.5rem;
   padding-bottom: 0;
   color: #5a5a5a;
   background-color: #f8f9fa;
