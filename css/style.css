@@ -174,7 +174,7 @@ p {
 
 .banners {
   width: 100%;
-  min-height: 75vh;
+  min-height: 80vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -212,14 +212,14 @@ p.subtitulo-banner {
 /* Altura mais amigável em telas menores */
 @media (max-width: 991.98px) {
   .banners {
-    min-height: 65vh;
+    min-height: 75vh;
     background-attachment: scroll;
   }
 }
 
 @media (max-width: 575.98px) {
   .banners {
-    min-height: 55vh;
+    min-height: 70vh;
   }
 
   .banners-titulo {
