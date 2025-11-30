@@ -1,0 +1,403 @@
+/* ============================
+   FONTES
+   ============================ */
+
+@font-face {
+  font-family: 'bree-serif';
+  src: url('../assets/BreeSerif-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+.bree-serif {
+  font-family: 'bree-serif', serif !important;
+}
+
+/* ============================
+   BASE
+   ============================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding-top: 4.5rem; /* espaço para o navbar fixo */
+  padding-bottom: 0;
+  color: #5a5a5a;
+  background-color: #f8f9fa;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #ec2910;
+  outline-offset: 2px;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.cem-porcento {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.section-spacing {
+  padding: 3rem 0;
+}
+
+@media (max-width: 575.98px) {
+  .section-spacing {
+    padding: 2.25rem 0;
+  }
+}
+
+/* ============================
+   TÍTULOS / TIPOGRAFIA
+   ============================ */
+
+.section-title {
+  font-weight: 600;
+}
+
+.texto-titulo {
+  color: #cb4a28;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: 'bree-serif', serif;
+}
+
+.text-subtitulo {
+  color: #084932;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: 'bree-serif', serif;
+}
+
+.text-subtitulo2 {
+  color: #084932;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: 'bree-serif', serif;
+}
+
+.texto-laranja {
+  color: #ea5117;
+}
+
+/* ============================
+   NAVBAR / FOOTER / BOTÕES
+   ============================ */
+
+.bg-danger {
+  background-color: #e0440b !important;
+}
+
+.bg-darkgreen {
+  background-color: #03310d;
+}
+
+.btn-danger {
+  color: #ffffff;
+  background-color: #ec2910;
+  border-color: #ec2910;
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible {
+  background-color: #ffffff;
+  color: #ec2910;
+  border-color: #ec2910;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus-visible {
+  color: #e2b676 !important;
+}
+
+.nav-link {
+  font-size: 1.15rem;
+  margin-inline: 0.6rem;
+}
+
+@media (max-width: 575.98px) {
+  .nav-link {
+    font-size: 1rem;
+    margin-inline: 0.3rem;
+  }
+}
+
+.social-media {
+  color: rgb(235, 175, 45);
+}
+
+.social-media:hover {
+  color: rgb(238, 102, 23);
+}
+
+/* ============================
+   BANNERS / HERO
+   ============================ */
+
+.banner-1 { background-image: url('../assets/img/crepe1.jpg'); }
+.banner-2 { background-image: url('../assets/img/crepe2.jpg'); }
+.banner-3 { background-image: url('../assets/img/crepe3.jpg'); }
+.banner-4 { background-image: url('../assets/img/atendimento.jpg'); }
+
+.banners {
+  width: 100%;
+  min-height: 75vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Parallax em telas maiores */
+.parallax {
+  background-attachment: fixed;
+}
+
+.not-parallax {
+  background-attachment: scroll;
+}
+
+/* Overlay do banner */
+.banners-titulo {
+  --bs-bg-opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.55);
+  width: 100%;
+  text-align: center;
+}
+
+/* Títulos do banner */
+h1.titulo-banner,
+h2.titulo-banner {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+p.subtitulo-banner {
+  font-size: 1.05rem;
+}
+
+/* Altura mais amigável em telas menores */
+@media (max-width: 991.98px) {
+  .banners {
+    min-height: 65vh;
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banners {
+    min-height: 55vh;
+  }
+
+  .banners-titulo {
+    padding-inline: 1rem;
+  }
+
+  h1.titulo-banner,
+  h2.titulo-banner {
+    font-size: 2rem;
+  }
+
+  p.subtitulo-banner {
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================
+   CARDS / IMAGENS
+   ============================ */
+
+.imagem-card {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .imagem-card {
+    height: 160px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .imagem-card {
+    height: 250px;
+  }
+}
+
+.card {
+  border-radius: 0.5rem;
+}
+
+/* Fundo claro reaproveitado */
+.bg-light-gray {
+  background-color: #f0ece8;
+}
+
+/* ============================
+   ANIMAÇÕES SUAVES
+   ============================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Banners entram com leve fade/slide */
+.banners-titulo {
+  animation: fadeUp 0.9s ease-out both;
+}
+
+/* Cards com hover e entrada suave */
+.card-animada {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+.card-animada,
+.card.card-animada {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-animada:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Respeitar quem não gosta de animação */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ============================
+   ACESSIBILIDADE / UTILITÁRIOS
+   ============================ */
+
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 767.98px) {
+  #gmap_canvas {
+    margin-top: 1rem;
+  }
+}
+
+/* ============================
+   CÓDIGOS ANTIGOS / OPCIONAIS
+   ============================ */
+
+mat-form-field {
+  width: 100%;
+}
+
+/* Side nav (caso use em outro lugar) */
+.side-nav-left {
+  position: fixed !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+.side-nav-content {
+  z-index: 1002;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  min-width: 200px;
+  max-width: 300px;
+  height: calc(100% - 60px);
+  padding: 30px;
+  overflow: auto;
+  box-shadow: 0 2px 14px 0 rgba(130, 130, 130, 0.5);
+  background: #FFF;
+  color: #555555 !important;
+}
+
+.backdrop {
+  position: fixed !important;
+  z-index: 1001;
+  height: 100%;
+  width: 100%;
+}
+
+.mat-drawer {
+  box-shadow: unset !important;
+}
+
+.dropdown-menu {
+  font-size: 1rem;
+}
+
+a.dropdown-item {
+  color: rgb(8, 73, 50);
+}
+
+a.dropdown-item:hover {
+  color: rgb(8, 73, 50);
+}
+
+a.dropdown-item:active {
+  color: #f8f8f8;
+  background-color: #7c7c7b;
+}
+
+.section-bg-alt {
+  background-color: #fff7f0; /* tom suave puxando pro laranja, combina com o tema */
+}
