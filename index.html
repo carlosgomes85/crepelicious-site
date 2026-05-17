@@ -143,6 +143,35 @@
               Crepes, tapiocas, waffles, omeletes e crepiocas com diversos sabores salgados e doces,
               preparados com muito carinho para você.
             </p>
+            <div class="hero-actions d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+              <a href="https://pedido.anota.ai/loja/crepelicious?f=msa"
+                 class="btn btn-danger btn-lg"
+                 target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-motorcycle"></i> Pedir agora
+              </a>
+              <a href="#cardapio" class="btn btn-outline-light btn-lg">
+                <i class="fa-solid fa-utensils"></i> Ver cardápio
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="Destaques da Crepelicious">
+        <div class="container">
+          <div class="quick-info-panel">
+            <div class="quick-info-item">
+              <i class="fa-solid fa-bowl-food"></i>
+              <span>Mais de 40 sabores</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Gramacho, Duque de Caxias</span>
+            </div>
+            <div class="quick-info-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>Aberto a partir de 17:30</span>
+            </div>
           </div>
         </div>
       </section>
@@ -150,14 +179,17 @@
       <!-- CARDÁPIO -->
       <section id="cardapio" class="section-spacing" aria-labelledby="titulo-cardapio">
         <div class="container">
-          <h2 id="titulo-cardapio" class="section-title texto-titulo mb-3">Cardápio</h2>
+          <div class="section-heading">
+            <span class="section-kicker">Doces e salgados</span>
+            <h2 id="titulo-cardapio" class="section-title texto-titulo mb-3">Cardápio</h2>
+          </div>
 
-          <p class="lead">
+          <p class="lead section-intro">
             Temos um cardápio amplo, com mais de 40 sabores doces e salgados para crepes,
             tapiocas, waffles, omeletes e crepiocas, além de bebidas variadas.
           </p>
 
-          <div class="row row-cols-2 row-cols-md-4 g-4 my-4">
+          <div class="row row-cols-2 row-cols-md-4 g-4 my-4 menu-grid">
             <div class="col">
               <article class="card card-animada shadow-sm h-100">
                 <img src="assets/img/crepes_salgados.jpg"
@@ -286,6 +318,7 @@
             <!-- Texto -->
             <div class="col-md-7">
               <div class="card card-animada border-0 shadow-sm bg-white h-100 p-3 p-lg-4">
+                <span class="section-kicker">Desde 2009</span>
                 <h2 id="titulo-empresa" class="section-title texto-titulo mb-3">
                   A Crepelicious
                 </h2>
@@ -354,9 +387,12 @@
       <!-- LOCALIZAÇÃO -->
       <section id="localizacao" class="section-spacing" aria-labelledby="titulo-localizacao">
         <div class="container">
-          <h2 id="titulo-localizacao" class="section-title texto-titulo mb-4">
-            Localização
-          </h2>
+          <div class="section-heading">
+            <span class="section-kicker">Venha visitar</span>
+            <h2 id="titulo-localizacao" class="section-title texto-titulo mb-4">
+              Localização
+            </h2>
+          </div>
 
           <div class="row gy-4 align-items-stretch">
 
@@ -426,15 +462,18 @@
       <!-- CONTATO -->
       <section id="contato" class="section-spacing section-bg-alt" aria-labelledby="titulo-contato">
         <div class="container">
-          <h2 id="titulo-contato" class="section-title texto-titulo mb-4">
-            Contato
-          </h2>
+          <div class="section-heading">
+            <span class="section-kicker">Peça do seu jeito</span>
+            <h2 id="titulo-contato" class="section-title texto-titulo mb-4">
+              Contato
+            </h2>
+          </div>
 
-          <div class="row gy-4">
+          <div class="row gy-4 contact-grid">
 
             <!-- WHATSAPP -->
             <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card w-100 shadow-sm border-0 card-animada">
+              <div class="card w-100 shadow-sm border-0 card-animada contact-card">
                 <div class="card-body">
                   <h3 class="text-subtitulo fs-4 mb-2 text-center text-md-start">
                     <i class="fa-brands fa-whatsapp me-2"></i> WhatsApp
@@ -443,9 +482,9 @@
                     Fale conosco para tirar dúvidas ou fazer seu pedido direto pelo WhatsApp.
                   </p>
                 </div>
-                <div class="card-footer bg-transparent text-center">
+                <div class="card-footer bg-transparent text-center contact-actions">
                   <a href="https://api.whatsapp.com/send?phone=5521969445525"
-                     class="btn btn-danger btn-lg"
+                     class="btn btn-contact btn-whatsapp"
                      target="_blank" rel="noopener noreferrer">
                     <i class="fa-solid fa-mobile-screen-button"></i> Enviar mensagem
                   </a>
@@ -455,7 +494,7 @@
 
             <!-- DELIVERY -->
             <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card w-100 shadow-sm border-0 card-animada">
+              <div class="card w-100 shadow-sm border-0 card-animada contact-card contact-card-featured">
                 <div class="card-body">
                   <h3 class="text-subtitulo fs-4 mb-2 text-center text-md-start">
                     <i class="fa-solid fa-motorcycle me-2"></i> Delivery Online
@@ -465,11 +504,11 @@
                     e receba em casa.
                   </p>
                 </div>
-                <div class="card-footer bg-transparent text-center">
+                <div class="card-footer bg-transparent text-center contact-actions">
                   <a href="https://pedido.anota.ai/loja/crepelicious?f=msa"
-                     class="btn btn-danger btn-lg"
+                     class="btn btn-contact btn-delivery"
                      target="_blank" rel="noopener noreferrer">
-                    Acessar sistema de pedidos
+                    <i class="fa-solid fa-bag-shopping"></i> Fazer pedido
                   </a>
                 </div>
               </div>
@@ -477,7 +516,7 @@
 
             <!-- REDES SOCIAIS -->
             <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="card w-100 shadow-sm border-0 card-animada">
+              <div class="card w-100 shadow-sm border-0 card-animada contact-card">
                 <div class="card-body">
                   <h3 class="text-subtitulo fs-4 mb-2 text-center text-md-start">
                     <i class="fa-solid fa-hashtag me-2"></i> Redes Sociais
@@ -486,14 +525,14 @@
                     Acompanhe novidades, promoções e avisos nas nossas redes sociais.
                   </p>
                 </div>
-                <div class="card-footer bg-transparent text-center">
+                <div class="card-footer bg-transparent text-center contact-actions contact-actions-social">
                   <a href="https://www.instagram.com/crepelicious_/"
-                     class="btn btn-danger btn-lg my-1"
+                     class="btn btn-contact btn-instagram"
                      target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-instagram"></i> Instagram
                   </a>
                   <a href="https://www.facebook.com/crepelicious2"
-                     class="btn btn-danger btn-lg my-1"
+                     class="btn btn-contact btn-facebook"
                      target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-facebook"></i> Facebook
                   </a>
