@@ -554,7 +554,7 @@ p {
 
 h1.titulo-banner,
 h2.titulo-banner {
-  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  font-size: clamp(2.25rem, 6.5vw, 4.7rem);
   line-height: 1.02;
   text-shadow: 0 0.35rem 1.4rem rgba(0, 0, 0, 0.36);
 }
@@ -674,7 +674,7 @@ p.subtitulo-banner {
 
   h1.titulo-banner,
   h2.titulo-banner {
-    font-size: 2.6rem;
+    font-size: 2.25rem;
   }
 
   .hero-actions .btn {
@@ -835,12 +835,12 @@ p.subtitulo-banner {
 }
 
 .banners:not(#principal) {
-  min-height: 46vh;
+  min-height: 56vh;
   background-position: center;
 }
 
 .banners:not(#principal) h2.titulo-banner {
-  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-size: clamp(1.8rem, 4.2vw, 3.2rem);
 }
 
 .banners:not(#principal) p.subtitulo-banner {
@@ -1204,7 +1204,7 @@ footer {
 
 @media (max-width: 991.98px) {
   .banners:not(#principal) {
-    min-height: 38vh;
+    min-height: 46vh;
   }
 
   .menu-cta,
@@ -1239,7 +1239,7 @@ footer {
 
 @media (max-width: 575.98px) {
   .banners:not(#principal) {
-    min-height: 34vh;
+    min-height: 42vh;
   }
 
   .menu-cta {
