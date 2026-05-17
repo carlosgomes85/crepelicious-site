@@ -445,7 +445,7 @@ p {
   gap: 0.45rem;
   margin-bottom: 0.35rem;
   color: #084932;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
   text-transform: uppercase;
   font-size: 0.78rem;
@@ -467,10 +467,16 @@ p {
 .navbar {
   min-height: 5.75rem;
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 0.65rem 1.5rem rgba(72, 47, 32, 0.12) !important;
 }
 
 .navbar .container {
   gap: 1rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 .navbar-brand img {
@@ -483,7 +489,8 @@ p {
   margin-inline: 0.2rem;
   border-radius: 999px;
   padding: 0.45rem 0.8rem !important;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .nav-link:hover,
@@ -493,7 +500,7 @@ p {
 
 .btn {
   border-radius: 999px;
-  font-weight: 700;
+  font-weight: 500;
   padding-inline: 1.35rem;
   transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -533,8 +540,8 @@ p {
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(90deg, rgba(8, 73, 50, 0.78), rgba(0, 0, 0, 0.26) 48%, rgba(203, 74, 40, 0.32)),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.12));
+    linear-gradient(90deg, rgba(3, 49, 13, 0.68), rgba(0, 0, 0, 0.34) 48%, rgba(120, 45, 25, 0.24)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.16));
 }
 
 .banners-titulo {
@@ -589,7 +596,7 @@ p.subtitulo-banner {
   min-height: 5rem;
   padding: 1rem;
   color: #084932;
-  font-weight: 800;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -677,8 +684,9 @@ p.subtitulo-banner {
 
 /* Ajustes solicitados: menu e contato */
 .navbar .nav-link {
-  font-size: clamp(1.08rem, 1.25vw, 1.22rem);
-  padding: 0.55rem 0.95rem !important;
+  font-size: clamp(1.16rem, 1.35vw, 1.3rem);
+  padding: 0.58rem 0.92rem !important;
+  letter-spacing: 0;
 }
 
 .contact-grid {
@@ -739,6 +747,7 @@ p.subtitulo-banner {
   border: 2px solid transparent;
   color: #ffffff;
   font-size: 1.02rem;
+  font-weight: 500;
   box-shadow: 0 0.65rem 1.35rem rgba(72, 47, 32, 0.16);
 }
 
@@ -797,14 +806,14 @@ p.subtitulo-banner {
 
 @media (max-width: 1199.98px) {
   .navbar .nav-link {
-    font-size: 1.02rem;
-    padding-inline: 0.7rem !important;
+    font-size: 1.08rem;
+    padding-inline: 0.58rem !important;
   }
 }
 
 @media (max-width: 991.98px) {
   .navbar .nav-link {
-    font-size: 1.16rem;
+    font-size: 1.22rem;
     margin-block: 0.15rem;
   }
 }
@@ -813,4 +822,574 @@ p.subtitulo-banner {
   .contact-actions-social {
     grid-template-columns: 1fr;
   }
+}
+
+/* Rodada final de refinamento visual */
+.main-content {
+  background:
+    linear-gradient(180deg, #fffaf4 0%, #fffaf4 42%, #fff2e7 100%) !important;
+}
+
+#principal.banners {
+  min-height: calc(100vh - 5.75rem);
+}
+
+.banners:not(#principal) {
+  min-height: 46vh;
+  background-position: center;
+}
+
+.banners:not(#principal) h2.titulo-banner {
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.banners:not(#principal) p.subtitulo-banner {
+  font-size: clamp(0.98rem, 1.7vw, 1.12rem);
+}
+
+.banners:not(#principal)::before {
+  background:
+    linear-gradient(90deg, rgba(3, 49, 13, 0.56), rgba(0, 0, 0, 0.34) 55%, rgba(120, 45, 25, 0.18)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.14));
+}
+
+#cardapio .section-heading,
+#cardapio .section-intro,
+#localizacao .section-heading,
+#contato .section-heading {
+  margin-inline: auto;
+  text-align: center;
+}
+
+#cardapio .section-kicker,
+#localizacao .section-kicker,
+#contato .section-kicker {
+  justify-content: center;
+}
+
+.menu-grid {
+  --bs-gutter-x: 1.15rem;
+  --bs-gutter-y: 1.15rem;
+}
+
+.menu-grid .card {
+  border: 0;
+  box-shadow: 0 0.7rem 1.6rem rgba(72, 47, 32, 0.1) !important;
+}
+
+.menu-grid .card-body {
+  background: #ffffff;
+  border-top: 4px solid #e2b676;
+}
+
+.menu-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.35rem;
+  border-radius: 0.5rem;
+  background: #084932;
+  color: #ffffff;
+  box-shadow: 0 1rem 2.2rem rgba(8, 73, 50, 0.18);
+}
+
+.menu-cta .section-kicker,
+.menu-cta p {
+  color: #ffffff;
+}
+
+.menu-cta .section-kicker::before {
+  background: #e2b676;
+}
+
+.menu-cta .btn-danger {
+  flex: 0 0 auto;
+  background-color: #ec2910;
+  border-color: #ec2910;
+}
+
+#empresa .card,
+#localizacao .card,
+.contact-card {
+  box-shadow: 0 0.85rem 1.9rem rgba(72, 47, 32, 0.1) !important;
+}
+
+#empresa img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  max-height: 470px;
+  object-fit: cover;
+}
+
+#localizacao .ratio {
+  min-height: 360px;
+}
+
+.contact-spotlight {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, rgba(236, 41, 16, 0.94), rgba(203, 74, 40, 0.9)),
+    #ec2910;
+  color: #ffffff;
+  box-shadow: 0 1rem 2.35rem rgba(203, 74, 40, 0.2);
+}
+
+.contact-spotlight h3 {
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+}
+
+.contact-spotlight p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.contact-spotlight-label {
+  display: inline-flex;
+  margin-bottom: 0.45rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+
+.contact-spotlight-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  gap: 0.75rem;
+  min-width: min(26rem, 100%);
+}
+
+.contact-spotlight .btn-contact {
+  box-shadow: 0 0.6rem 1.25rem rgba(0, 0, 0, 0.16);
+}
+
+.contact-card {
+  border: 1px solid rgba(226, 182, 118, 0.45) !important;
+}
+
+.contact-card .card-body {
+  min-height: 12.5rem;
+}
+
+.contact-card-featured {
+  transform: translateY(-0.35rem);
+}
+
+.contact-card-featured:hover {
+  transform: translateY(-0.7rem);
+}
+
+footer {
+  margin-top: 0 !important;
+}
+
+.sebrae-feature {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, rgba(255, 250, 244, 0.96), rgba(255, 242, 231, 0.96)),
+    #fff2e7;
+  border: 1px solid rgba(226, 182, 118, 0.55);
+}
+
+.sebrae-icon {
+  display: grid;
+  place-items: center;
+  width: 3.35rem;
+  height: 3.35rem;
+  border-radius: 999px;
+  color: #084932;
+  background: #e2b676;
+  box-shadow: 0 0.6rem 1.25rem rgba(72, 47, 32, 0.14);
+}
+
+.sebrae-content h3 {
+  color: #084932;
+  font-size: 1.45rem;
+}
+
+.sebrae-content .lead {
+  color: #66594e;
+}
+
+.sebrae-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn-sebrae-primary,
+.btn-sebrae-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 2px solid transparent;
+  min-height: 3rem;
+}
+
+.btn-sebrae-primary {
+  color: #ffffff;
+  background-color: #084932;
+  border-color: #084932;
+}
+
+.btn-sebrae-primary:hover,
+.btn-sebrae-primary:focus-visible {
+  color: #ffffff;
+  background-color: #ec2910;
+  border-color: #ec2910;
+}
+
+.btn-sebrae-secondary {
+  color: #084932;
+  background-color: #ffffff;
+  border-color: rgba(8, 73, 50, 0.2);
+}
+
+.btn-sebrae-secondary:hover,
+.btn-sebrae-secondary:focus-visible {
+  color: #ffffff;
+  background-color: #084932;
+  border-color: #084932;
+}
+
+.site-footer {
+  background:
+    linear-gradient(135deg, #03310d 0%, #084932 55%, #cb4a28 160%);
+  padding: 3rem 0 1.2rem;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
+.footer-logo {
+  width: min(235px, 70vw);
+  max-height: 78px;
+  object-fit: contain;
+  margin-bottom: 0.85rem;
+}
+
+.footer-brand p,
+.footer-info p {
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+}
+
+.footer-social ul {
+  gap: 0.7rem;
+}
+
+.footer-social .social-media {
+  display: grid;
+  place-items: center;
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 999px;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1.25rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-social .social-media:hover,
+.footer-social .social-media:focus-visible {
+  color: #084932;
+  background: #e2b676;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+}
+
+.footer-bottom a {
+  color: #e2b676;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
+  color: #ffffff;
+}
+
+.reviews-section {
+  background:
+    linear-gradient(180deg, #fffaf4 0%, #fff2e7 100%);
+}
+
+.reviews-heading {
+  max-width: 820px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.reviews-heading .section-kicker {
+  justify-content: center;
+}
+
+.reviews-widget-shell {
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  border: 1px solid rgba(226, 182, 118, 0.55);
+  box-shadow: 0 1rem 2.35rem rgba(72, 47, 32, 0.12);
+}
+
+.reviews-widget-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(135deg, #ec2910, #cb4a28);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.92rem;
+}
+
+.reviews-dot {
+  display: inline-block;
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-right: 0.35rem;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.reviews-dot:nth-child(2) {
+  background: #ffd66b;
+}
+
+.reviews-dot:nth-child(3) {
+  background: #084932;
+}
+
+.reviews-source {
+  font-weight: 500;
+}
+
+.reviews-widget-body {
+  position: relative;
+  min-height: 260px;
+  padding: 1rem;
+}
+
+.reviews-widget-body > div {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991.98px) {
+  .banners:not(#principal) {
+    min-height: 38vh;
+  }
+
+  .menu-cta,
+  .contact-spotlight {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .menu-cta {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-spotlight-actions {
+    width: 100%;
+  }
+
+  .contact-card-featured,
+  .contact-card-featured:hover {
+    transform: none;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-social ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .banners:not(#principal) {
+    min-height: 34vh;
+  }
+
+  .menu-cta {
+    padding: 1.15rem;
+  }
+
+  .menu-cta .btn,
+  .contact-spotlight .btn {
+    width: 100%;
+  }
+
+  .contact-spotlight-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .sebrae-feature {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .sebrae-icon {
+    margin-inline: auto;
+  }
+
+  .sebrae-actions,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sebrae-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .reviews-widget-body {
+    padding: 0.75rem;
+  }
+}
+
+/* Acabamento final de cores e microinterações */
+.bg-danger {
+  background: linear-gradient(135deg, #cf451f 0%, #e35a22 100%) !important;
+}
+
+body,
+.main-content {
+  background-color: #fff8f1;
+}
+
+.main-content {
+  background:
+    linear-gradient(180deg, #fff8f1 0%, #fffaf4 44%, #fff1e4 100%) !important;
+}
+
+.section-bg-alt,
+.reviews-section {
+  background:
+    linear-gradient(180deg, #fff3e8 0%, #fff8f1 100%);
+}
+
+.texto-titulo {
+  color: #bd4526;
+}
+
+.section-kicker {
+  color: #164832;
+}
+
+.btn-danger,
+.btn-delivery,
+.menu-cta .btn-danger {
+  background-color: #d9471f;
+  border-color: #d9471f;
+}
+
+.btn-danger {
+  box-shadow: 0 0.45rem 1rem rgba(217, 71, 31, 0.18);
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible,
+.btn-delivery:hover,
+.btn-delivery:focus-visible {
+  background-color: #123f2d;
+  border-color: #123f2d;
+}
+
+.btn-contact,
+.btn-sebrae-primary,
+.btn-sebrae-secondary {
+  box-shadow: 0 0.5rem 1.1rem rgba(72, 47, 32, 0.14);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus-visible {
+  color: #fff4dc !important;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
+.quick-info-panel,
+.reviews-widget-shell,
+.sebrae-feature,
+.card {
+  border-color: rgba(226, 182, 118, 0.42);
+}
+
+.menu-grid .card,
+#empresa .card,
+#localizacao .card,
+.contact-card,
+.reviews-widget-shell {
+  box-shadow: 0 0.75rem 1.65rem rgba(72, 47, 32, 0.1) !important;
+}
+
+.menu-cta {
+  background:
+    linear-gradient(135deg, #123f2d 0%, #1d5a41 100%);
+  box-shadow: 0 0.9rem 2rem rgba(18, 63, 45, 0.16);
+}
+
+.contact-spotlight {
+  background:
+    linear-gradient(135deg, #d9471f 0%, #ee6a2b 100%);
+  box-shadow: 0 0.85rem 2rem rgba(217, 71, 31, 0.18);
+}
+
+.reviews-widget-topbar {
+  background: linear-gradient(135deg, #d9471f 0%, #ee6a2b 100%);
+}
+
+.site-footer {
+  background:
+    linear-gradient(135deg, #123f2d 0%, #164832 58%, #7f331e 145%);
+}
+
+.footer-social .social-media {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social .social-media:hover,
+.footer-social .social-media:focus-visible {
+  color: #123f2d;
+  background: #f0c778;
 }

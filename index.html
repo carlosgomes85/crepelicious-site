@@ -282,10 +282,16 @@
 			
           </div>
 
-          <div class="text-center mt-3">
-            <h3 class="bree-serif fs-4 mb-3">
-              Acesse nosso cardápio completo:
-            </h3>
+          <div class="menu-cta mt-4">
+            <div>
+              <span class="section-kicker">Cardápio completo</span>
+              <h3 class="bree-serif fs-4 mb-1">
+                Escolha seu sabor favorito
+              </h3>
+              <p class="mb-0">
+                Veja todas as opções doces, salgadas e bebidas disponíveis.
+              </p>
+            </div>
             <a href="https://drive.google.com/drive/folders/1fcFdh6sIf1wnDx7ZfI1-dvs9C7_xh4Rd"
                target="_blank" rel="noopener noreferrer"
                class="btn btn-danger btn-lg">
@@ -336,23 +342,30 @@
                   onde continuamos atendendo com carinho até hoje.
                 </p>
 
-                <div class="mt-3 p-3 p-lg-3 bg-light-gray rounded-3">
-                  <p class="lead mb-2">
-                    Veja a matéria que o SEBRAE fez sobre nós:
-                  </p>
-                  <p class="lead mb-2">
-                    <a href="https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/bds/bds.nsf/10945b61f73ebe1252cfeb3dc4a3ae31/$File/31829.pdf"
-                       target="_blank" rel="noopener noreferrer">
-                      Baixar PDF da matéria
-                    </a>
-                  </p>
-                  <p class="lead mb-0">
-                    Fonte:
-                    <a href="https://inteligenciademercado.rj.sebrae.com.br/produtos/Caso-de-inspiracao-Crepelicious"
-                       target="_blank" rel="noopener noreferrer">
-                      Inteligência de Mercado - SEBRAE
-                    </a>
-                  </p>
+                <div class="sebrae-feature mt-4">
+                  <div class="sebrae-icon" aria-hidden="true">
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+                  <div class="sebrae-content">
+                    <span class="section-kicker">Reconhecimento</span>
+                    <h3 class="bree-serif mb-2">Caso de inspiração do SEBRAE</h3>
+                    <p class="lead mb-3">
+                      Nossa história foi destaque em uma matéria do SEBRAE sobre empreendedorismo,
+                      superação e crescimento local.
+                    </p>
+                    <div class="sebrae-actions">
+                      <a href="https://bibliotecas.sebrae.com.br/chronus/ARQUIVOS_CHRONUS/bds/bds.nsf/10945b61f73ebe1252cfeb3dc4a3ae31/$File/31829.pdf"
+                         class="btn btn-sebrae-primary"
+                         target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-file-pdf"></i> Baixar matéria
+                      </a>
+                      <a href="https://inteligenciademercado.rj.sebrae.com.br/produtos/Caso-de-inspiracao-Crepelicious"
+                         class="btn btn-sebrae-secondary"
+                         target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver fonte
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -469,6 +482,28 @@
             </h2>
           </div>
 
+          <div class="contact-spotlight mb-4">
+            <div>
+              <span class="contact-spotlight-label">Mais rápido</span>
+              <h3 class="bree-serif mb-1">Seu pedido em poucos cliques</h3>
+              <p class="mb-0">
+                Peça pelo delivery online ou fale direto com a equipe no WhatsApp.
+              </p>
+            </div>
+            <div class="contact-spotlight-actions">
+              <a href="https://pedido.anota.ai/loja/crepelicious?f=msa"
+                 class="btn btn-contact btn-delivery"
+                 target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-bag-shopping"></i> Fazer pedido
+              </a>
+              <a href="https://api.whatsapp.com/send?phone=5521969445525"
+                 class="btn btn-contact btn-whatsapp"
+                 target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+
           <div class="row gy-4 contact-grid">
 
             <!-- WHATSAPP -->
@@ -550,43 +585,89 @@
       </section>
 
       <!-- WIDGET -->
-      <section class="my-3" aria-label="Feed de redes sociais">
+      <section class="reviews-section section-spacing" aria-labelledby="titulo-avaliacoes">
         <div class="container">
-          <div class="elfsight-app-0d23afc6-e760-438c-af5f-d7ad843a21fd"></div>
+          <div class="reviews-heading">
+            <span class="section-kicker">Quem prova recomenda</span>
+            <h2 id="titulo-avaliacoes" class="section-title texto-titulo mb-3">
+              Avaliações e novidades
+            </h2>
+            <p class="lead section-intro mb-0">
+              Confira comentários, publicações e registros de quem acompanha a Crepelicious.
+            </p>
+          </div>
+
+          <div class="reviews-widget-shell">
+            <div class="reviews-widget-topbar">
+              <div>
+                <span class="reviews-dot"></span>
+                <span class="reviews-dot"></span>
+                <span class="reviews-dot"></span>
+              </div>
+              <span class="reviews-source">Feed social</span>
+            </div>
+            <div class="reviews-widget-body">
+              <div class="elfsight-app-0d23afc6-e760-438c-af5f-d7ad843a21fd"></div>
+            </div>
+          </div>
         </div>
       </section>
 
     </main>
 
-    <footer class="bg-darkgreen bg-gradient text-white py-4 mt-4">
-      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+    <footer class="site-footer text-white">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img src="assets/img/logoTexto.png"
+                 alt="Crepelicious - Crepes & Tapiocas"
+                 class="footer-logo" />
+            <p class="mb-0">
+              Crepes, tapiocas, waffles e crepiocas preparados com carinho em Gramacho.
+            </p>
+          </div>
 
-        <h3 class="mb-0 bree-serif fs-5">© 2023 Crepelicious</h3>
+          <div class="footer-info">
+            <h3 class="bree-serif fs-5 mb-2">Visite a Crepelicious</h3>
+            <p class="mb-1">Rua Rio Bonito, 57 - Gramacho</p>
+            <p class="mb-0">Duque de Caxias, RJ</p>
+          </div>
 
-        <ul class="nav list-unstyled d-flex mb-0">
-          <li class="ms-3">
-            <a class="social-media"
-               href="https://www.instagram.com/crepelicious_/"
-               target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-instagram fa-2x text-white"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="social-media"
-               href="https://www.facebook.com/crepelicious2"
-               target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-facebook fa-2x text-white"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="social-media"
-               href="https://www.tiktok.com/@crepeliciousbr"
-               target="_blank" rel="noopener noreferrer">
-              <i class="fa-brands fa-tiktok fa-2x text-white"></i>
-            </a>
-          </li>
-        </ul>
+          <div class="footer-social">
+            <h3 class="bree-serif fs-5 mb-2">Acompanhe</h3>
+            <ul class="list-unstyled d-flex mb-0">
+              <li>
+                <a class="social-media"
+                   href="https://www.instagram.com/crepelicious_/"
+                   aria-label="Instagram da Crepelicious"
+                   target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-media"
+                   href="https://www.facebook.com/crepelicious2"
+                   aria-label="Facebook da Crepelicious"
+                   target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="social-media"
+                   href="https://www.tiktok.com/@crepeliciousbr"
+                   aria-label="TikTok da Crepelicious"
+                   target="_blank" rel="noopener noreferrer">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="footer-bottom">
+          <span>© 2023 Crepelicious</span>
+          <a href="#principal">Voltar ao topo</a>
+        </div>
       </div>
     </footer>
 
